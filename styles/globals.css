@@ -12,6 +12,10 @@ body {
   margin: 0 auto;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 h1,
 h2,
 h3,
