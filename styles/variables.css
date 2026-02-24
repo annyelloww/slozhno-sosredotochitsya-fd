@@ -6,5 +6,10 @@
 :root {
   --bg-image: url("../images/cover-image.png");
   --bg-color: #000028;
-  --header-margin: 10px;
+  --header-padding: 10px;
+  --page-font: "IBM Plex Mono";
+  --accent-color: #FF0070;
+  --txt-accent-color: #000028;
+  --text-color: #F1B2CE;
+  --font-size-main: 18px;
 }

@@ -7,11 +7,116 @@
   background-size: cover;
   background-attachment: fixed;
   background-color: var(--bg-color);
+  color: var(--text-color);
+  font-size: var(--font-size-main);
 }
 
 .header {
+  position: relative;
   display: grid;
-  height: 1vh;
+  grid-template-rows: min-content 1fr min-content;
+  height: 100vh;
   min-height: 668px;
-  margin: var(--header-margin);
+  padding: var(--header-padding);
+  align-content: start;
 }
+
+.header::before {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-right: 1px var(--accent-color) solid;
+  border-top: 1px var(--accent-color) solid;
+  right: 10px;
+  top: 10px;
+}
+
+.header::after {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-left: 1px var(--accent-color) solid;
+  border-bottom: 1px var(--accent-color) solid;
+  left: 10px;
+  bottom: 10px;
+}
+
+.header__decoration {
+  position: relative;
+  line-height: 25px;
+  color: var(--accent-color);
+  text-transform: uppercase;
+  grid-row: 1;
+  justify-self: end;
+  align-self: start;
+  margin-right: 28px;
+}
+
+.header__decoration::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 42px;
+  background-color: var(--accent-color);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 4px 2px var(--accent-color);
+}
+
+.header__middle {
+  grid-row: 2;
+  align-self: start;
+  display: grid;
+  gap: clamp(65px, 10vh, 120px);
+}
+
+.header__theme-menu {
+  justify-self: end;
+  align-self: flex-end;
+  margin-top: clamp(40px, 6vh, 80px);
+}
+
+.header__theme-menu-list {
+  display: grid;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  background-color: transparent;
+  border: none;
+  text-transform: lowercase;
+  color: var(--accent-color);
+  padding: 1.5px 13px;
+}
+
+.header__theme-menu-button_active {
+  border: 1px var(--accent-color) solid;
+}
+
+.header__title {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 83%;
+  color: #db00ff;
+  text-shadow: 4px 4px 0 var(--accent-color);
+  font-weight: bold;
+  align-self: start;
+  justify-self: start;
+  margin-top: 0;
+}
+
+.header__subtitle {
+  color: var(--txt-accent-color);
+  padding-right: 20px;
+  font-weight: 700;
+  line-height: 23.4px;
+  background-color: var(--accent-color);
+  grid-row: 3;
+  align-self: center;
+  justify-self: end;
+  margin: clamp(55px, 8vh, 100px) 0;
+}
+
+
