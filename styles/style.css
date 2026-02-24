@@ -21,7 +21,8 @@
   align-content: start;
 }
 
-.header::before {
+.header::before,
+.footer::before {
   position: absolute;
   content: "";
   width: 25px;
@@ -32,7 +33,8 @@
   top: 10px;
 }
 
-.header::after {
+.header::after,
+.footer::after {
   position: absolute;
   content: "";
   width: 25px;
@@ -111,7 +113,7 @@
 .header__title {
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 83%;
-  color: #db00ff;
+  color: var(--focus-color);
   text-shadow: 4px 4px 0 var(--accent-color);
   font-weight: bold;
   align-self: start;
@@ -191,6 +193,21 @@
   width: 100%;
   height: auto;
   display: block;
+}
+
+.footer {
+  position: relative;
+  height: 100vh;
+  min-height: 668px;
+  display: grid;
+  justify-content: center;
+}
+
+.footer__title {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  color: var(--focus-color);
+  align-self: center;
+  text-shadow: 2px 2px 0 var(--accent-color)
 }
 
 
