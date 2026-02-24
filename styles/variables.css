@@ -9,7 +9,9 @@
   --header-padding: 10px;
   --page-font: "IBM Plex Mono";
   --accent-color: #FF0070;
+  --hover-color: rgb(255, 0, 112, 0.4);
   --txt-accent-color: #000028;
   --text-color: #F1B2CE;
   --font-size-main: 18px;
+  --main-padding: 40px 10px;
 }
