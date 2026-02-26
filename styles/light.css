@@ -13,3 +13,23 @@
   --txt-accent-color: #353430;
   --bg-image: none;
 }
+
+.theme-light .header__decoration {
+    visibility: hidden;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+  --accent-color: #ff8dcb;
+  --bg-color: #fff;
+  --focus-color: #ffc2e6;
+  --hover-color: rgba(50, 49, 45, 0.4);
+  --text-color: #353430;
+  --txt-accent-color: #353430;
+  --bg-image: none;
+  }
+
+  .header__decoration {
+    visibility: hidden;
+  }
+}
