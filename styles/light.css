@@ -18,6 +18,10 @@
     visibility: hidden;
 }
 
+.theme-light .section__title {
+  color: var(--text-color);
+}
+
 @media (prefers-color-scheme: light) {
   :root {
   --accent-color: #ff8dcb;
@@ -31,5 +35,9 @@
 
   .header__decoration {
     visibility: hidden;
+  }
+
+  .section__title {
+    color: var(--text-color);
   }
 }
