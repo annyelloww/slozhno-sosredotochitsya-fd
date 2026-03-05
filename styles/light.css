@@ -38,6 +38,10 @@
   border-color: var(--text-color);
 }
 
+.theme-light .header__theme-menu-button:focus-visible {
+  border-bottom-color: var(--text-color);
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     --accent-color: #ff8dcb;
@@ -57,19 +61,23 @@
     color: var(--text-color);
   }
 
-  .theme-light .decorated-zone::before {
+  .decorated-zone::before {
     border-color: var(--text-color);
   }
 
-  .theme-light .decorated-zone::after {
+  .decorated-zone::after {
     border-color: var(--text-color);
   }
 
-  .theme-light .header__theme-menu-button {
+   .header__theme-menu-button {
     color: var(--text-color);
   }
 
-  .theme-light .header__theme-menu-button_active {
+  .header__theme-menu-button_active {
     border-color: var(--text-color);
+  }
+
+  .header__theme-menu-button:focus-visible {
+    border-bottom-color: var(--accent-color);
   }
 }

@@ -13,10 +13,6 @@ body {
   font-family: var(--page-font), sans-serif;
 }
 
-body::-webkit-scrollbar {
-  display: none;
-}
-
 h1,
 h2,
 h3,
